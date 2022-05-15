@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47BF48872830C43C007B7D54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BF48862830C43C007B7D54 /* AppDelegate.m */; };
+		47BF48892830C43F007B7D54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47BF48882830C43F007B7D54 /* Assets.xcassets */; };
+		47BF488C2830C43F007B7D54 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47BF488A2830C43F007B7D54 /* MainMenu.xib */; };
+		47BF488F2830C43F007B7D54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BF488E2830C43F007B7D54 /* main.m */; };
+		47BF489E2830C466007B7D54 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BF489D2830C466007B7D54 /* NetworkExtension.framework */; };
+		47BF48A22830C466007B7D54 /* FilterDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BF48A12830C466007B7D54 /* FilterDataProvider.m */; };
+		47BF48A42830C466007B7D54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BF48A32830C466007B7D54 /* main.m */; };
+		47BF48A92830C466007B7D54 /* com.wenghuangge.com.Service.systemextension.systemextension in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = 47BF489B2830C466007B7D54 /* com.wenghuangge.com.Service.systemextension.systemextension */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		47BF48B32830C4AB007B7D54 /* SextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BF48B12830C4AB007B7D54 /* SextManager.m */; };
+		47BF48C02830E9AF007B7D54 /* ServiceXpcServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BF48BF2830E9AF007B7D54 /* ServiceXpcServer.m */; };
+		47BF48C82830EADD007B7D54 /* XPCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BF48C62830EADD007B7D54 /* XPCClient.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47BF48A72830C466007B7D54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47BF487A2830C43C007B7D54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47BF489A2830C466007B7D54;
+			remoteInfo = Extension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		47BF48AD2830C466007B7D54 /* Embed System Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(SYSTEM_EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				47BF48A92830C466007B7D54 /* com.wenghuangge.com.Service.systemextension.systemextension in Embed System Extensions */,
+			);
+			name = "Embed System Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		47BF48822830C43C007B7D54 /* Service.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Service.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47BF48852830C43C007B7D54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		47BF48862830C43C007B7D54 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		47BF48882830C43F007B7D54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47BF488B2830C43F007B7D54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		47BF488D2830C43F007B7D54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47BF488E2830C43F007B7D54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		47BF48902830C43F007B7D54 /* Service.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Service.entitlements; sourceTree = "<group>"; };
+		47BF489B2830C466007B7D54 /* com.wenghuangge.com.Service.systemextension.systemextension */ = {isa = PBXFileReference; explicitFileType = "wrapper.system-extension"; includeInIndex = 0; path = com.wenghuangge.com.Service.systemextension.systemextension; sourceTree = BUILT_PRODUCTS_DIR; };
+		47BF489D2830C466007B7D54 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		47BF48A02830C466007B7D54 /* FilterDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterDataProvider.h; sourceTree = "<group>"; };
+		47BF48A12830C466007B7D54 /* FilterDataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterDataProvider.m; sourceTree = "<group>"; };
+		47BF48A32830C466007B7D54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		47BF48A52830C466007B7D54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47BF48A62830C466007B7D54 /* Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Extension.entitlements; sourceTree = "<group>"; };
+		47BF48B12830C4AB007B7D54 /* SextManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SextManager.m; sourceTree = "<group>"; };
+		47BF48B22830C4AB007B7D54 /* SextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SextManager.h; sourceTree = "<group>"; };
+		47BF48BD2830E9AF007B7D54 /* ServiceXpcServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceXpcServer.h; sourceTree = "<group>"; };
+		47BF48BE2830E9AF007B7D54 /* XPCServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPCServiceProtocol.h; sourceTree = "<group>"; };
+		47BF48BF2830E9AF007B7D54 /* ServiceXpcServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceXpcServer.m; sourceTree = "<group>"; };
+		47BF48C62830EADD007B7D54 /* XPCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPCClient.m; sourceTree = "<group>"; };
+		47BF48C72830EADD007B7D54 /* XPCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPCClient.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47BF487F2830C43C007B7D54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47BF48982830C466007B7D54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47BF489E2830C466007B7D54 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47BF48792830C43C007B7D54 = {
+			isa = PBXGroup;
+			children = (
+				47BF48842830C43C007B7D54 /* Service */,
+				47BF489F2830C466007B7D54 /* Extension */,
+				47BF489C2830C466007B7D54 /* Frameworks */,
+				47BF48832830C43C007B7D54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47BF48832830C43C007B7D54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47BF48822830C43C007B7D54 /* Service.app */,
+				47BF489B2830C466007B7D54 /* com.wenghuangge.com.Service.systemextension.systemextension */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47BF48842830C43C007B7D54 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				47BF48BA2830E93E007B7D54 /* XPC */,
+				47BF48B02830C484007B7D54 /* ExtensionController */,
+				47BF48852830C43C007B7D54 /* AppDelegate.h */,
+				47BF48862830C43C007B7D54 /* AppDelegate.m */,
+				47BF48882830C43F007B7D54 /* Assets.xcassets */,
+				47BF488A2830C43F007B7D54 /* MainMenu.xib */,
+				47BF488D2830C43F007B7D54 /* Info.plist */,
+				47BF488E2830C43F007B7D54 /* main.m */,
+				47BF48902830C43F007B7D54 /* Service.entitlements */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		47BF489C2830C466007B7D54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47BF489D2830C466007B7D54 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47BF489F2830C466007B7D54 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				47BF48BB2830E992007B7D54 /* XPC */,
+				47BF48A02830C466007B7D54 /* FilterDataProvider.h */,
+				47BF48A12830C466007B7D54 /* FilterDataProvider.m */,
+				47BF48A32830C466007B7D54 /* main.m */,
+				47BF48A52830C466007B7D54 /* Info.plist */,
+				47BF48A62830C466007B7D54 /* Extension.entitlements */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		47BF48B02830C484007B7D54 /* ExtensionController */ = {
+			isa = PBXGroup;
+			children = (
+				47BF48B22830C4AB007B7D54 /* SextManager.h */,
+				47BF48B12830C4AB007B7D54 /* SextManager.m */,
+			);
+			path = ExtensionController;
+			sourceTree = "<group>";
+		};
+		47BF48BA2830E93E007B7D54 /* XPC */ = {
+			isa = PBXGroup;
+			children = (
+				47BF48C52830EABD007B7D54 /* XPCClient */,
+			);
+			path = XPC;
+			sourceTree = "<group>";
+		};
+		47BF48BB2830E992007B7D54 /* XPC */ = {
+			isa = PBXGroup;
+			children = (
+				47BF48BC2830E99C007B7D54 /* XPCServer */,
+			);
+			path = XPC;
+			sourceTree = "<group>";
+		};
+		47BF48BC2830E99C007B7D54 /* XPCServer */ = {
+			isa = PBXGroup;
+			children = (
+				47BF48BD2830E9AF007B7D54 /* ServiceXpcServer.h */,
+				47BF48BF2830E9AF007B7D54 /* ServiceXpcServer.m */,
+				47BF48BE2830E9AF007B7D54 /* XPCServiceProtocol.h */,
+			);
+			path = XPCServer;
+			sourceTree = "<group>";
+		};
+		47BF48C52830EABD007B7D54 /* XPCClient */ = {
+			isa = PBXGroup;
+			children = (
+				47BF48C72830EADD007B7D54 /* XPCClient.h */,
+				47BF48C62830EADD007B7D54 /* XPCClient.m */,
+			);
+			path = XPCClient;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47BF48812830C43C007B7D54 /* Service */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47BF48932830C43F007B7D54 /* Build configuration list for PBXNativeTarget "Service" */;
+			buildPhases = (
+				47BF487E2830C43C007B7D54 /* Sources */,
+				47BF487F2830C43C007B7D54 /* Frameworks */,
+				47BF48802830C43C007B7D54 /* Resources */,
+				47BF48AD2830C466007B7D54 /* Embed System Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47BF48A82830C466007B7D54 /* PBXTargetDependency */,
+			);
+			name = Service;
+			productName = Service;
+			productReference = 47BF48822830C43C007B7D54 /* Service.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47BF489A2830C466007B7D54 /* Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47BF48AA2830C466007B7D54 /* Build configuration list for PBXNativeTarget "Extension" */;
+			buildPhases = (
+				47BF48972830C466007B7D54 /* Sources */,
+				47BF48982830C466007B7D54 /* Frameworks */,
+				47BF48992830C466007B7D54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Extension;
+			productName = Extension;
+			productReference = 47BF489B2830C466007B7D54 /* com.wenghuangge.com.Service.systemextension.systemextension */;
+			productType = "com.apple.product-type.system-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47BF487A2830C43C007B7D54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					47BF48812830C43C007B7D54 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					47BF489A2830C466007B7D54 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 47BF487D2830C43C007B7D54 /* Build configuration list for PBXProject "Service" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47BF48792830C43C007B7D54;
+			productRefGroup = 47BF48832830C43C007B7D54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47BF48812830C43C007B7D54 /* Service */,
+				47BF489A2830C466007B7D54 /* Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47BF48802830C43C007B7D54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47BF48892830C43F007B7D54 /* Assets.xcassets in Resources */,
+				47BF488C2830C43F007B7D54 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47BF48992830C466007B7D54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47BF487E2830C43C007B7D54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47BF48C82830EADD007B7D54 /* XPCClient.m in Sources */,
+				47BF488F2830C43F007B7D54 /* main.m in Sources */,
+				47BF48872830C43C007B7D54 /* AppDelegate.m in Sources */,
+				47BF48B32830C4AB007B7D54 /* SextManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47BF48972830C466007B7D54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47BF48A42830C466007B7D54 /* main.m in Sources */,
+				47BF48A22830C466007B7D54 /* FilterDataProvider.m in Sources */,
+				47BF48C02830E9AF007B7D54 /* ServiceXpcServer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47BF48A82830C466007B7D54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47BF489A2830C466007B7D54 /* Extension */;
+			targetProxy = 47BF48A72830C466007B7D54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		47BF488A2830C43F007B7D54 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47BF488B2830C43F007B7D54 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47BF48912830C43F007B7D54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		47BF48922830C43F007B7D54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		47BF48942830C43F007B7D54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Service/Service.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Service/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenghuangge.com.Service;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		47BF48952830C43F007B7D54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Service/Service.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Service/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenghuangge.com.Service;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		47BF48AB2830C466007B7D54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenghuangge.com.Service.systemextension;
+				PRODUCT_NAME = "$(inherited)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		47BF48AC2830C466007B7D54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenghuangge.com.Service.systemextension;
+				PRODUCT_NAME = "$(inherited)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47BF487D2830C43C007B7D54 /* Build configuration list for PBXProject "Service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BF48912830C43F007B7D54 /* Debug */,
+				47BF48922830C43F007B7D54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47BF48932830C43F007B7D54 /* Build configuration list for PBXNativeTarget "Service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BF48942830C43F007B7D54 /* Debug */,
+				47BF48952830C43F007B7D54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47BF48AA2830C466007B7D54 /* Build configuration list for PBXNativeTarget "Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BF48AB2830C466007B7D54 /* Debug */,
+				47BF48AC2830C466007B7D54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47BF487A2830C43C007B7D54 /* Project object */;
+}
