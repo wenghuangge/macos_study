@@ -245,11 +245,8 @@ NS_ENUM(NSInteger, Status) {
     //加载系统扩展
     NSLog(@"Beginning to install the extension");
     OSSystemExtensionRequest *req = [OSSystemExtensionRequest activationRequestForExtension:extensionIdentifity queue:dispatch_get_main_queue()];
-    
     req.delegate = (id<OSSystemExtensionRequestDelegate>)self;
-    
     [[OSSystemExtensionManager sharedManager] submitRequest:req];
-    
     self.currentRequest = req;
     
 }
@@ -291,8 +288,13 @@ NS_ENUM(NSInteger, Status) {
     logAttributes[NSForegroundColorAttributeName] = [NSColor textColor];
     logAttributes[NSFontAttributeName] = font;
     
-    NSString *message = [NSString stringWithFormat:@"localPort:%@ <- remoteAddress:%@ \n",localport, address];
+    //时间
+    NSDateFormatter *formater = [[NSDateFormatter alloc] init];
+    [formater setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *dateString = [formater stringFromDate:[NSDate date]];
+    NSString *message = [NSString stringWithFormat:@"date:%@ localPort:%@ <- remoteAddress:%@ \n",dateString, localport, address];
     NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:message attributes:logAttributes];
+    
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.logTextView.textStorage appendAttributedString:attributedString];
     });
